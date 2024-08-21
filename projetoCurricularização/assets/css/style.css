@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+/* Barra de navegação */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 65, 92, 0.75);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header .logo img {
+    height: 50px;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display:  inline;
+    margin-right: 90px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.img-fundo{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.img-fundo img {
+    width: 100%;
+    height: auto;
+}
+.overlay{
+ 
+    position: absolute;
+    width: 827px; 
+    height: 413px; 
+    background-color: #006B99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    flex-direction: column;
+    
+}
+
+.overlay h1 {
+    font-size: 230px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: -4px;
+    margin-top: -70px;
+}
+.overlay p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: -50px;
+    font-weight: bold;
+}
+.btn{
+    width: 501px;
+    height: 59px;
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-size: 18px;
+    color: black;
+    padding-top: 17px;
+    margin-top: 40px;
+    box-shadow: #2E6B98;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    background-color: #01435f;
+    color: white; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Quem somos*/
+
+.quemSomos {
+    margin: 150px 10% 80px 10%;
+    display: flex;
+    background-color: #C8C8C8;
+    width: 80%;
+    height: 300px;
+
+}
+
+.quemSomos img {
+    width: 35%;
+    height: 300px;
+}
+
+.quemSomos h2{
+    text-align: center;
+    width: 66%;
+    margin: 2% 17% 0% 17%;
+    font-size: 60px;
+    display: inline-block;
+}
+
+.quemSomos p {
+    margin: 2% 5% 5% 5%;
+    width: 90%;
+    height: 80%;
+    font-size: 24px;
+    text-align: justify;
+
+}
+
+/* Proposta */
+.proposta {
+    display: block;
+}
+
+.proposta img {
+    width: 100%;
+    position: absolute;
+}
+
+.nossaProposta {
+    position: relative;
+    background-color: #006B99;
+    color: white;
+    width: 40%;
+    height: 550px;
+    left: 55%;
+    transform: translate(0%, 16%);
+}
+
+.nossaProposta h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+}
+
+.nossaProposta p {
+    text-align: justify;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    font-size: 24px;
+}
+
+/* Parcerias */
+
+
+
+.fraseParcerias{
+    position: relative;
+}
+.fraseParcerias p {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+
+.fraseParcerias img {
+    width: 100%;
+    position: absolute;
+}
+
+.pep{
+    background-color: #C8C8C8;
+    margin: 5%;
+}
+.pep p{
+    position: absolute;
+    text-align: justify;
+}
+.pep img {
+    width: 644px;
+    height: 483px;
+    padding: 30px;
+}
+.detectarCor{
+    position: relative;
+    background-color: #C8C8C8;
+    margin: 5%;
+}
+.detectarCor p{
+    position: absolute;
+    text-align: justify;
+}
+.detectarCor img {
+    width: 644px;
+    height: 483px;
+    padding: 30px;
+    
+}
+
+/*como ajudar*/
+.comoAjudar{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+}
+
+.comoAjudar img{
+    width: 30%;
+}
+
+.comoAjudar button{
+    background-color: #2E6B98;
+    border-radius: 5px;
+    font-size: 28px;
+    color: white;
+}
+
+/*rodapé*/
+footer {
+    position: relative;
+    background-color: #2E6B98;
+    height: 250px;
+    color: white;
+}
+.fraseFinal{
+    font-size: 15px;
+    text-align: center;
+}
+.endereco {
+    position: absolute;
+    font-size: 18px;
+}
+.logoADVB{
+    font-size: 128px;
+    font-weight: bold;
+}
+
+footer img {
+    width: 50px;
+}
