@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    
 }
 
 /* Barra de navegação */
@@ -64,8 +62,8 @@ nav ul li a:hover {
 .overlay{
  
     position: absolute;
-    width: 827px; 
-    height: 413px; 
+    width: 40%; 
+    height: 380px; 
     background-color: #006B99;
     display: flex;
     align-items: center;
@@ -82,17 +80,20 @@ nav ul li a:hover {
 .overlay h1 {
     font-size: 230px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -4px;
-    margin-top: -70px;
+    margin-top: -60px;
 }
 .overlay p {
+    font-size: 18px;
+    letter-spacing: 1.4px;
     font-family: 'Roboto', sans-serif;
-    margin-top: -50px;
+    margin-top: -45px;
     font-weight: bold;
+    text-align: center;
 }
 .btn{
-    width: 501px;
+    width: 520px;
     height: 59px;
     display: inline-block;
     background-color: white;
@@ -101,10 +102,10 @@ nav ul li a:hover {
     font-size: 18px;
     color: black;
     padding-top: 17px;
-    margin-top: 40px;
+    margin-top: 50px;
     box-shadow: #2E6B98;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 .btn:hover {
     background-color: #01435f;
@@ -112,7 +113,88 @@ nav ul li a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    header .logo img {
+        height: 25px;
+        margin-left: 0;
+    }
+    nav {
+        margin-left: 140px;
+    
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        gap: 0; 
+        width: 100%;
+        margin-top: -30px;
+        
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0; 
+        align-items: left;
+
+    }
+
+    nav ul li a {
+        font-size: 8px; 
+        padding-left: 0; 
+        text-align: left; 
+        margin-left: 6px;
+    
+    }
+    .overlay{
+        margin-top: 25px;
+        width: 250px;
+        height: 133px;
+    }
+    .overlay h1{
+        font-size: 20vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: -30px;
+    }
+    .overlay p{
+        letter-spacing: 1px;
+        font-size: 6px;
+        margin-top: -16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    .btn{
+        width: 158px;
+        height: 20px;
+        display: inline-block;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 6px;
+        color: black;
+        padding-top: 6px;
+        margin-top: 15px;
+        box-shadow: #2E6B98;
+        box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+    .btn p {
+        font-size: 6px;
+    }
+    
+}
 
 /* Quem somos*/
 
@@ -148,6 +230,7 @@ nav ul li a:hover {
 }
 
 /* Proposta */
+
 .proposta {
     display: block;
 }
@@ -182,97 +265,259 @@ nav ul li a:hover {
     font-size: 24px;
 }
 
-/* Parcerias */
+/* Curiosidades */
 
-
-
-.fraseParcerias{
-    position: relative;
-}
-.fraseParcerias p {
+    /* Alinhamento de texto */
     
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-weight: bold;
-    color: white;
-    font-size: 50px;
+.textoCuriosidades {
+    display: block;
+    font-size: 24px;
+    width: 90%;
+    text-align: justify;
+    margin: 0% 3% 0% 7%;
 }
 
-.fraseParcerias img {
+    /* Alinhamento de div das curiosidades */
+
+
+.cardUm {
+    display: flex;
+    margin: 60px 10% 60px 10%;
+}
+
+#elementoUm {
+    display: flexbox;
+    background-color: #D9D9D9;
     width: 100%;
+    height: 330px;
+    border-radius: 40px;
+    padding: 25px 0px 25px 0px;
+    
+}
+
+#posicaoImgUm{
+    position: relative;
+    top: -210px
+}
+
+.cardDois{
+    display: flex;
+    margin: 60px 10% 60px 10%;
+}
+
+#elementoDois {
+    display: flexbox;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 250px;
+    border-radius: 40px;
+    padding: 25px 0px 25px 0px;
+    
+}
+
+#posicaoImgDois {
+    position: relative;
+    top: -155px;
+}
+
+
+.cardTres{
+    display: flex;
+    margin: 60px 10% 60px 10%;
+}
+
+#elementoTres {
+    display: flexbox;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 360px;
+    border-radius: 40px;
+    padding: 25px 0px 25px 0px;
+}
+
+#posicaoImgTres {
+    position: relative;
+    top: -210px; 
+}
+
+    /* Tamanho de imagem */
+
+.imgCuriosidade {
+    display: block;
+    background-color: #006B99;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 100%;
+    position: relative;
+    right: 70px;
+}
+
+.imgCuriosidade img {
+    width: 80px;
+    margin: 20px 20px 20px 20px;
+}
+
+
+/* Parcerias */
+.parcerias {
+    display: block;
+}
+
+.parcerias img{
+    width: 100%;
+    opacity: 80%;
     position: absolute;
 }
 
-.pep{
-    background-color: #C8C8C8;
-    margin: 5%;
+.frasePacerias{
+    position: absolute;
 }
+
+.textoParcerias {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.nossaParceria h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+}
+
+.nossaParceria {
+    margin-top: 15%;
+    position: relative;
+    background-color: #006B99;
+    color: white;
+    width: 40%;
+    height: 100px;
+    left: 55%;
+    transform: translate(0%, 16%);
+}
+
+.parcerias h2{
+    font-size: 60px;
+    margin-left: 5%;
+}
+.projetosParceria{
+    display: flex;
+}
+.pep{
+    display: flex;
+    background-color: #C8C8C8;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:2%;
+    position: flex;
+}
+/*
 .pep p{
     position: absolute;
     text-align: justify;
+}
+*/
+.textoProjeto{
+
+    text-align: justify;
+    width: 50%;
+    margin: 5% 5% 0% 5%;
+    font-size: 24px;
+
 }
 .pep img {
     width: 644px;
     height: 483px;
     padding: 30px;
 }
+
+/*
 .detectarCor{
-    position: relative;
+    position: absolute;
     background-color: #C8C8C8;
     margin: 5%;
 }
-.detectarCor p{
-    position: absolute;
-    text-align: justify;
-}
+
 .detectarCor img {
     width: 644px;
     height: 483px;
     padding: 30px;
-    
 }
-
+*/
 /*como ajudar*/
 .comoAjudar{
-    position: relative;
+    display: flex;
     margin-top: 5%;
     margin-left: 15%;
     margin-bottom: 5%;
     margin-right: 15%;
+    font-size:24px;
 }
 
 .comoAjudar img{
-    width: 30%;
+    width: 40%;
+}
+
+.comoAjudar h2{
+    margin: 0% 5% 5% 0%;
+    font-size: 60px;
+}
+
+.textoComoAjudar{
+    text-align: justify;
+    margin: 0% 0% 5% 5%;
 }
 
 .comoAjudar button{
     background-color: #2E6B98;
     border-radius: 5px;
-    font-size: 28px;
+    font-size: 24px;
+    margin: 5% 5% 0% 0%;
     color: white;
 }
 
 /*rodapé*/
 footer {
-    position: relative;
     background-color: #2E6B98;
-    height: 250px;
+    height: 300px;
     color: white;
+}
+.enderecamento{
+ display: flex;
+}
+.logoADVB{
+    display: flex;
+    font-size: 128px;
+    font-weight: bold;
+    margin: 5% 0% 2% 5%;
+}
+
+footer img {
+    display: flex;
+    width: 50px;
+    margin: 15% 5% 205% 0%;
+    
+    }
+
+.endereco {
+    display: inline-block;
+    font-size: 14px;
+    margin: 7% 0% 0% 0%;
+
 }
 .fraseFinal{
     font-size: 15px;
     text-align: center;
-}
-.endereco {
-    position: absolute;
-    font-size: 18px;
-}
-.logoADVB{
-    font-size: 128px;
-    font-weight: bold;
+    margin-top: -20;
+    color: red;
 }
 
-footer img {
-    width: 50px;
-}
+
