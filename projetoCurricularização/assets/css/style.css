@@ -485,39 +485,44 @@ nav ul li a:hover {
 }
 
 /*rodapé*/
-footer {
+.enderecamento {
     background-color: #2E6B98;
     height: 300px;
     color: white;
+    display: flex;
 }
-.enderecamento{
- display: flex;
-}
+
 .logoADVB{
     display: flex;
     font-size: 128px;
     font-weight: bold;
-    margin: 5% 0% 2% 5%;
+    margin: 4% 0% 2% 5%;
 }
 
 footer img {
-    display: flex;
     width: 50px;
-    margin: 15% 5% 205% 0%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
     
-    }
+.logoApps {
+    display: flex;
+    margin: 15% 0% 4% -25%;
+}
 
 .endereco {
     display: inline-block;
     font-size: 14px;
-    margin: 7% 0% 0% 0%;
-
+    margin: 7% 0% 0% 40%;
 }
+
 .fraseFinal{
+    background-color: #2E6B98;
+    margin: 0% 0% 0% 0%;
     font-size: 15px;
     text-align: center;
-    margin-top: -20;
-    color: red;
+    color: white;
 }
+
 
 
