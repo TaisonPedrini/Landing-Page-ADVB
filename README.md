@@ -1,2 +1,2 @@
 # Landing-Page-ADVB
-Projeto de curricularização da extensão
+Projeto da curricularização da extensão; 2024/02 - UNIFEBE
