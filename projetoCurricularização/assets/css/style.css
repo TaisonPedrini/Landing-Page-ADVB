@@ -77,6 +77,12 @@ nav ul li a:hover {
     
 }
 
+@media (max-width: 1366px) {
+    .overlay {
+        width: 47%; 
+    }
+}
+
 .overlay h1 {
     font-size: 230px;
     font-family: 'Roboto', sans-serif;
@@ -203,20 +209,18 @@ nav ul li a:hover {
     display: flex;
     background-color: #C8C8C8;
     width: 80%;
-    height: 300px;
-
+    height: 28%;
 }
 
 .quemSomos img {
     width: 35%;
-    height: 300px;
 }
 
 .quemSomos h2{
     text-align: center;
     width: 66%;
     margin: 2% 17% 0% 17%;
-    font-size: 60px;
+    font-size: 300%;
     display: inline-block;
 }
 
@@ -224,7 +228,7 @@ nav ul li a:hover {
     margin: 2% 5% 5% 5%;
     width: 90%;
     height: 80%;
-    font-size: 24px;
+    font-size: 150%;
     text-align: justify;
 
 }
@@ -245,15 +249,23 @@ nav ul li a:hover {
     background-color: #006B99;
     color: white;
     width: 40%;
-    height: 550px;
+    height: 525px;
     left: 55%;
     transform: translate(0%, 16%);
 }
 
+@media (max-width: 1366px) {
+    .nossaProposta {
+        width: 40%;
+        height: 550px;
+
+    }
+}
+
 .nossaProposta h2 {
-    font-size: 60px;
+    font-size: 300%;
     text-align: center;
-    padding: 15px 0 15px 0;
+    padding: 15px 0px 15px 0px;
     margin: 0% 10% 0% 10%;
     width: 80%;
 }
@@ -262,7 +274,7 @@ nav ul li a:hover {
     text-align: justify;
     width: 90%;
     margin: 0% 5% 0% 5%;
-    font-size: 24px;
+    font-size: 150%;
 }
 
 /* Curiosidades */
@@ -271,10 +283,15 @@ nav ul li a:hover {
     
 .textoCuriosidades {
     display: block;
-    font-size: 24px;
+    font-size: 150%;
     width: 90%;
     text-align: justify;
     margin: 0% 3% 0% 7%;
+}
+
+.curiosidades h2 {
+    font-size: 400%;
+    margin: 7% 0% 3% 6%;
 }
 
     /* Alinhamento de div das curiosidades */
@@ -323,7 +340,7 @@ nav ul li a:hover {
 
 .cardTres{
     display: flex;
-    margin: 60px 10% 60px 10%;
+    margin: 60px 10% 90px 10%;
 }
 
 #elementoTres {
@@ -338,6 +355,33 @@ nav ul li a:hover {
 #posicaoImgTres {
     position: relative;
     top: -210px; 
+}
+
+@media (max-width: 1366px) {
+    
+    #elementoUm {
+        height: 330px;  
+    }
+    
+    #posicaoImgUm{
+        top: -200px
+    }
+    
+    #elementoDois {
+        height: 290px;
+    }
+    
+    #posicaoImgDois {
+        top: -190px;
+    }
+
+    #elementoTres {
+        height: 360px;
+    }
+    
+    #posicaoImgTres {
+        top: -230px; 
+    }
 }
 
     /* Tamanho de imagem */
@@ -366,7 +410,7 @@ nav ul li a:hover {
 
 .parcerias img{
     width: 100%;
-    opacity: 80%;
+
     position: absolute;
 }
 
@@ -408,9 +452,19 @@ nav ul li a:hover {
     font-size: 60px;
     margin-left: 5%;
 }
-.projetosParceria{
-    display: flex;
+
+@media (max-width: 1366px) {
+    
+    .nossaParceria {
+        transform: translate(0%, -55%);
+    }
+
 }
+
+.projetosParceria{
+    display: block;
+}
+
 .pep{
     display: flex;
     background-color: #C8C8C8;
@@ -419,31 +473,27 @@ nav ul li a:hover {
     margin-top:2%;
     position: flex;
 }
-/*
-.pep p{
-    position: absolute;
-    text-align: justify;
-}
-*/
-.textoProjeto{
 
+.textoProjeto{
     text-align: justify;
     width: 50%;
     margin: 5% 5% 0% 5%;
     font-size: 24px;
-
 }
+
 .pep img {
     width: 644px;
     height: 483px;
     padding: 30px;
 }
 
-/*
 .detectarCor{
-    position: absolute;
+    display: flex;
     background-color: #C8C8C8;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:2%;
+    position: flex;
 }
 
 .detectarCor img {
@@ -451,7 +501,7 @@ nav ul li a:hover {
     height: 483px;
     padding: 30px;
 }
-*/
+
 /*como ajudar*/
 .comoAjudar{
     display: flex;
@@ -485,39 +535,55 @@ nav ul li a:hover {
 }
 
 /*rodapé*/
-footer {
+.enderecamento {
     background-color: #2E6B98;
     height: 300px;
     color: white;
+    display: flex;
 }
-.enderecamento{
- display: flex;
-}
+
 .logoADVB{
     display: flex;
     font-size: 128px;
     font-weight: bold;
-    margin: 5% 0% 2% 5%;
+    margin: 4% 0% 2% 5%;
 }
 
 footer img {
-    display: flex;
-    width: 50px;
-    margin: 15% 5% 205% 0%;
+    width: 100%;
+    margin-right: 50%;
+    margin-left: 50%;
+}
     
+.logoApps {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 14% 5% 0% -21.5%;
+}
+
+@media (max-width: 1366px) {
+    footer img {
+        width: 50px;
+        margin-right: 20%;
+        margin-left: 20%;
     }
+    .logoApps {
+        display: flex;
+        margin: 15% 0% 4% -25%;
+    }
+}
 
 .endereco {
     display: inline-block;
     font-size: 14px;
-    margin: 7% 0% 0% 0%;
-
+    margin: 7% 0% 0% 40%;
 }
+
 .fraseFinal{
+    background-color: #2E6B98;
+    margin: 0% 0% 0% 0%;
     font-size: 15px;
     text-align: center;
-    margin-top: -20;
-    color: red;
+    color: white;
 }
-
-
